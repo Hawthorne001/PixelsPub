@@ -173,12 +173,6 @@ PCを使用しないADBの手順：
 
 ### オプション1：[Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)をインストールし、提供されているガイドに従ってアクティブ化します。その後、_Pixels_アプリに戻り、解像度を適用して権限を付与します。
 
-### オプション2：[LADB](https://github.com/tribalfs/LADB/releases)をインストールし、セットアップガイドに従って次のコマンドを実行します：
-
-`pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS`
-
-注：これにはWi-Fiネットワークへの接続が必要です。java.lang.SecurityExceptionが発生した場合は、上記の手順2の注意を確認してください。重要：LADBは、動作させるために数回の試行が必要な場合があり、すべてのデバイスで動作するとは限りません。
-
 </details>
 
 

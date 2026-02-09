@@ -200,15 +200,6 @@ adb -s [6వ దశలో చూపిన పరికరం ID] shell pm grant 
 https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api  
 ఇన్‌స్టాల్ చేసి గైడ్‌ను అనుసరించండి.
 
-### ఆప్షన్ 2: LADB
-
-https://github.com/tribalfs/LADB/releases
-
-```bash
-pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS
-```
-
-Wi-Fi అవసరం. కొన్ని పరికరాల్లో పని చేయకపోవచ్చు.
 
 </details>
 

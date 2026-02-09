@@ -185,15 +185,6 @@ PC kullanmadan ADB Prosedürleri:
 ve sağladığı kılavuzu izleyerek etkinleştirebilirsiniz. Ardından, bir çözünürlük uygulayarak izin
 vermek için _Pixels_ uygulamasına geri dönün.
 
-### Seçenek 2: [LADB](https://github.com/tribalfs/LADB/releases)'yi yükleyebilir
-
-ve kurulum kılavuzunu takip edip aşağıdaki komutu çalıştırabilirsiniz:
-
-`pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS`
-
-Not: Bu, bir wifi ağına bağlanmayı gerektirir. Bir java.lang.SecurityException hatası alırsanız,
-yukarıdaki 2. adımdaki notları kontrol edin. Önemli: LADB bazen çalışması için birkaç deneme
-gerektirir ve tüm cihazlarda çalışmayabilir.
 
 </details>
 

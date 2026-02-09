@@ -191,21 +191,6 @@
 
 ---
 
-### 🟣 الخيار 2
-
-يمكنك تثبيت [LADB](https://github.com/tribalfs/LADB/releases)، واتباع دليل الإعداد الخاص به،  
-ثم تنفيذ الأمر التالي:
-
-```pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS```
-
-⚠️ ملاحظات
-
-يتطلب هذا الاتصال بشبكة Wi-Fi.
-
-إذا ظهرت رسالة الخطأ java.lang.SecurityException، تحقق من الملاحظات في الخطوة 2 أعلاه.
-
-مهم: أحيانًا يحتاج LADB إلى عدة محاولات حتى يعمل، وقد لا يعمل على جميع الأجهزة.
-
 </details>
 
 

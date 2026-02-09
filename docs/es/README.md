@@ -193,18 +193,6 @@ y activarlo siguiendo la guía proporcionada. Luego, vuelve a la aplicación _Pi
 permisos
 aplicando una resolución.
 
-### Opción 2: Puedes instalar [LADB](https://github.com/tribalfs/LADB/releases)
-
-y seguir su guía de configuración, luego ejecutar el siguiente comando:
-
-`pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS`
-
-**Nota:** Esto requiere conectarse a una red Wi-Fi.  
-Si aparece un error `java.lang.SecurityException`, revisa las notas del paso 2 anterior.  
-**Importante:** A veces, **LADB** necesita varios intentos para funcionar y puede que no funcione en
-todos los dispositivos.
-[VIDEO DEMOSTRATIVO](https://youtu.be/gdPHB9ru238)
-
 </details>
 
 

@@ -182,16 +182,6 @@ Quy trình ADB không cần sử dụng PC:
 và kích hoạt nó theo hướng dẫn được cung cấp. Sau đó, quay lại ứng dụng _Pixels_ để cấp quyền cho nó
 bằng cách áp dụng độ phân giải.
 
-### Tùy chọn 2: Bạn có thể cài đặt [LADB](https://github.com/tribalfs/LADB/releases)
-
-và làm theo hướng dẫn thiết lập của nó và thực thi lệnh sau:
-
-`pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS`
-
-Lưu ý: Điều này yêu cầu kết nối với mạng wifi. Nếu gặp java.lang.SecurityException, hãy kiểm tra các
-ghi chú ở bước 2 ở trên. Quan trọng: LADB đôi khi cần thử vài lần để hoạt động và nó có thể không
-hoạt động trên tất cả các thiết bị.
-
 </details>
 
 

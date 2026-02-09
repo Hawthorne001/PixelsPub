@@ -191,17 +191,6 @@ Prosedur ADB Tanpa Menggunakan PC:
 dan mengaktifkannya dengan mengikuti panduan yang disediakan.  
 Setelah itu, kembali ke aplikasi _Pixels_ untuk memberikan izin dengan menerapkan resolusi.
 
-### Opsi 2: Kamu dapat menginstal [LADB](https://github.com/tribalfs/LADB/releases)
-
-ikuti panduan pengaturannya dan jalankan perintah berikut:
-
-`pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS`
-
-**Catatan:** Ini memerlukan koneksi ke jaringan Wi-Fi.  
-Jika terjadi kesalahan `java.lang.SecurityException`, periksa catatan pada **langkah 2** di atas.  
-**Penting:** Kadang-kadang **LADB** memerlukan beberapa kali percobaan untuk berfungsi, dan mungkin
-tidak bekerja di semua perangkat.
-[VIDEO WALKTHROUGH](https://youtu.be/gdPHB9ru238)
 
 </details>
 
