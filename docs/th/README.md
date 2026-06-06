@@ -21,7 +21,7 @@
 
 ----------------------
 
-ขั้นตอน ADB โดยใช้คอมพิวเตอร์:
+การให้สิทธิ์โดยใช้พีซี:
 ----------------------
 
 <details>
@@ -83,14 +83,9 @@
 
 ![opening_cmd](res/opening_cmd.png)
 
-#### สำหรับ macOS: เปิด Terminal
+#### สำหรับ macOS:
 
-* ค้นหา `Terminal` จาก Launchpad แล้วเปิดขึ้นมา
-* พิมพ์ `sudo -s` และใส่รหัสผ่านผู้ใช้ของคุณ  
-  **Terminal จะไม่แสดงอักขระที่คุณพิมพ์**
-* จากนั้นรัน `export PATH=.:$PATH`
-
-**หากไม่ทำขั้นตอนนี้ คุณจะพบข้อผิดพลาด `adb: command not found`**
+* ดับเบิลคลิกไฟล์ zip ที่ดาวน์โหลดเพื่อเปิด คลิกขวาที่โฟลเดอร์ `platform-tools` เพื่อเปิดเมนูบริบท แล้วคลิก _บริการ_ > _เทอร์มินัลใหม่ที่โฟลเดอร์_
 
 </details>
 
@@ -111,8 +106,6 @@
 > ```adb devices```
 
 ![6](res/adb_devices.png)
-
-#### สำหรับ macOS:  ```./adb devices ```
 
 * หากเชื่อมต่อไม่ได้ ลองเปลี่ยนพอร์ต USB หรือสายข้อมูล  
   หากยังไม่เชื่อมต่อ อาจเป็นเพราะคอมพิวเตอร์ไม่มีไดรเวอร์ USB ของโทรศัพท์  
@@ -136,10 +129,6 @@
 ```adb -s [รหัสอุปกรณ์จากขั้นตอนที่ 6] shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS```
 
 ![6](res/write_secure_settings.png)
-
-#### สำหรับ macOS:
-
-```./adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS ```
 
 #### หมายเหตุสำหรับ MIUI, OnePlus และอุปกรณ์บางรุ่นอื่น ๆ
 
@@ -172,13 +161,15 @@
 
 ----------------------
 
-ขั้นตอน ADB โดยไม่ใช้คอมพิวเตอร์:
+การให้สิทธิ์โดยไม่ใช้พีซี (ใช้ Shizuku):
 ----------------------
 <details>
 
-### ตัวเลือก 1: ติดตั้ง [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)
+### ตัวเลือก 1: ติดตั้ง [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)*
 
 และเปิดใช้งานตามคำแนะนำในแอป จากนั้นกลับไปที่แอป _Pixels_ เพื่อให้สิทธิ์โดยการปรับความละเอียดหน้าจอ
+
+*หากเวอร์ชัน Play Store ไม่ทำงานบนอุปกรณ์ของคุณ คุณสามารถใช้ [Shizuku fork นี้](https://github.com/thedjchi/Shizuku/releases) แทนได้
 
 </details>
 

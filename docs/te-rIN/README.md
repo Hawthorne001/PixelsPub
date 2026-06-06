@@ -21,7 +21,7 @@
 
 ----------------------
 
-పీసీ (PC) ఉపయోగించి ADB ప్రక్రియ:
+పీసీ (PC) ఉపయోగించి అనుమతి ఇవ్వడం:
 ----------------------
 
 <details>
@@ -85,14 +85,9 @@
 
 ![opening_cmd](../en/res/opening_cmd.png)
 
-#### macOS కోసం: టెర్మినల్ తెరవండి
+#### macOS కోసం:
 
-* Launchpad నుండి `Terminal` వెతికి తెరవండి.
-* `sudo -s` అమలు చేసి మీ యూజర్ పాస్‌వర్డ్ టైప్ చేయండి.  
-  **టెర్మినల్ మీరు టైప్ చేసే అక్షరాలను చూపించదు.**
-* `export PATH=.:$PATH` అమలు చేయండి
-
-**ఇది లేకపోతే `adb: command not found` లోపం వస్తుంది.**
+* డౌన్‌లోడ్ చేసిన జిప్ ఫైల్‌ను తెరవడానికి దానిపై డబుల్ క్లిక్ చేయండి, కాంటెక్స్ట్ మెనూను తెరవడానికి `platform-tools` ఫోల్డర్‌పై రైట్ క్లిక్ చేసి, ఆపై _Services_ > _New Terminal at Folder_ పై క్లిక్ చేయండి.
 
 </details>
 
@@ -119,12 +114,6 @@ adb devices
 
 ![adb_devices](../en/res/adb_devices.png)
 
-#### macOS కోసం:
-
-```bash
-./adb devices
-```
-
 * పరికరం కనెక్ట్ కాకపోతే, వేరే USB పోర్ట్ లేదా డేటా కేబుల్ ఉపయోగించండి.  
   అవసరమైతే USB డ్రైవర్లు ఇన్‌స్టాల్
   చేయండి: https://developer.android.com/studio/run/oem-usb#Drivers  
@@ -150,12 +139,6 @@ adb -s [6వ దశలో చూపిన పరికరం ID] shell pm grant 
 ```
 
 ![write_secure_settings](../en/res/write_secure_settings.png)
-
-#### macOS కోసం:
-
-```bash
-./adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS
-```
 
 #### MIUI, OnePlus మరియు ఇతర పరికరాల కోసం గమనిక
 
@@ -190,15 +173,17 @@ adb -s [6వ దశలో చూపిన పరికరం ID] shell pm grant 
 
 ----------------------
 
-పీసీ లేకుండా ADB ప్రక్రియ:
+పీసీ లేకుండా అనుమతి ఇవ్వడం (Shizuku ఉపయోగించి):
 ----------------------
 
 <details>
 
 ### ఆప్షన్ 1: Shizuku
 
-https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api  
+https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api*  
 ఇన్‌స్టాల్ చేసి గైడ్‌ను అనుసరించండి.
+
+*ఒకవేళ ప్లే స్టోర్ వెర్షన్ మీ పరికరంలో పనిచేయకపోతే, మీరు దానికి బదులుగా ఈ [Shizuku fork](https://github.com/thedjchi/Shizuku/releases)ను ఉపయోగించవచ్చు.
 
 
 </details>

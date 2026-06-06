@@ -21,7 +21,7 @@
 
 ----------------------
 
-إجراءات ADB باستخدام جهاز كمبيوتر:
+منح الإذن باستخدام جهاز كمبيوتر:
 ----------------------
 
 <details>
@@ -82,16 +82,9 @@
 
   ![opening_cmd](res/opening_cmd.png)
 
-#### بالنسبة لنظام التشغيل MacOS: افتح Terminal
+#### بالنسبة لنظام التشغيل macOS:
 
-* ابحث عن `Terminal` من Launchpad وقم بتشغيله.
-
-* قم بتشغيل `sudo -s` واكتب كلمة مرور المستخدم الخاصة بك. **لن تعرض المحطة الطرفية عدد الأحرف التي
-  تكتبها ، وستبقى فارغة.**
-
-* قم بتشغيل `export PATH=.:$PATH`
-
-**بدون هذا ، ستحصل على أخطاء `adb: command not found`.**
+* انقر نقرًا مزدوجًا فوق ملف zip الذي تم تنزيله لفتحه، ثم انقر بزر الماوس الأيمن فوق مجلد `platform-tools` لفتح قائمة السياق ثم انقر فوق _Services_ > _New Terminal at Folder_.
 
 </details>
 
@@ -113,8 +106,6 @@
 > ```adb devices```
 
 ![6](res/adb_devices.png)
-
-#### بالنسبة لنظام التشغيل macOS: ```./adb devices ```
 
 * إذا فشل جهازك في الاتصال بجهاز الكمبيوتر الخاص بك ، فحاول توصيله بمنفذ USB مختلف و / أو
   استخدام كابل بيانات USB مختلف. إذا لم يتم الاتصال بعد ، فمن المحتمل أن يكون جهاز الكمبيوتر الخاص
@@ -140,10 +131,6 @@
 ```adb -s [معرف الجهاز الموضح في الخطوة 6] shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS```
 
 ![6](res/write_secure_settings.png)
-
-#### بالنسبة لنظام التشغيل macOS:
-
-```./adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS ```
 
 #### ملاحظة لأجهزة MIUI و OnePlus وبعض الأجهزة الأخرى
 
@@ -177,7 +164,7 @@
 
 ----------------------
 
-إجراءات ADB بدون استخدام جهاز كمبيوتر:
+منح الإذن بدون استخدام جهاز كمبيوتر (باستخدام Shizuku):
 ----------------------
 <details>
 
@@ -185,9 +172,11 @@
 
 ### 🟢 الخيار 1
 
-يمكنك تثبيت [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)  
+يمكنك تثبيت [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)*  
 وتفعيله باتباع دليل الإعداد الخاص به.  
 بعد ذلك، يمكنك العودة إلى تطبيق _Pixels_ لمنحه الأذونات عن طريق تطبيق دقة الشاشة.
+
+*إذا كان إصدار متجر Play لا يعمل على جهازك، فيمكنك استخدام [نسخة Shizuku هذه](https://github.com/thedjchi/Shizuku/releases) بدلاً من ذلك.
 
 ---
 

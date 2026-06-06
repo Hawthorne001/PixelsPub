@@ -23,7 +23,7 @@ rootear el dispositivo).
 
 ----------------------
 
-Procedimiento ADB usando un PC:
+Otorgar permiso usando un PC:
 ----------------------
 
 <details>
@@ -87,16 +87,10 @@ Procedimiento ADB usando un PC:
 
   ![opening_cmd](res/opening_cmd.png)
 
-#### En macOS: Abre la Terminal
+#### Para macOS:
 
-* Busca `Terminal` desde Launchpad y ábrela.
-
-* Ejecuta `sudo -s` e introduce tu contraseña de usuario. **La terminal no mostrará los caracteres
-  mientras escribes.**
-
-* Ejecuta `export PATH=.:$PATH`
-
-**Sin esto, obtendrás errores como `adb: command not found` errors.**
+* Haz doble clic en el archivo zip descargado para abrirlo, haz clic derecho en la carpeta `platform-tools` para abrir el menú contextual y luego haz clic en
+  _Servicios_ > _Nueva terminal en la carpeta_.
 
 </details>
 
@@ -119,8 +113,6 @@ Procedimiento ADB usando un PC:
 > ```adb devices```
 
 ![6](res/adb_devices.png)
-
-#### En macOS:  ```./adb devices ```
 
 * Si tu dispositivo no logra conectarse, prueba con otro puerto USB o cable de datos diferente.
   Si aún así no conecta, puede que tu ordenador no tenga instalados los controladores USB del
@@ -146,10 +138,6 @@ Procedimiento ADB usando un PC:
 ```adb -s [ID del dispositivo mostrado en el paso 6] shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS```
 
 ![6](res/write_secure_settings.png)
-
-#### En macOS:
-
-```./adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS ```
 
 #### Nota para MIUI, OnePlus y algunos otros dispositivos
 
@@ -183,15 +171,18 @@ Si obtienes el error `java.lang.SecurityException: grantRuntimePermission`, sigu
 </details>
 
 ----------------------
-Procedimientos ADB sin usar una PC:
+Otorgar permiso sin usar una PC (usando Shizuku):
 ----------------------
 <details>
 
-### Opción 1: Puedes instalar [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)
+### Opción 1: Puedes instalar [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)*
 
 y activarlo siguiendo la guía proporcionada. Luego, vuelve a la aplicación _Pixels_ para otorgarle
 permisos
 aplicando una resolución.
+
+*Si la versión de Play Store no funciona en tu dispositivo, puedes usar
+esta [bifurcación de Shizuku](https://github.com/thedjchi/Shizuku/releases) en su lugar.
 
 </details>
 

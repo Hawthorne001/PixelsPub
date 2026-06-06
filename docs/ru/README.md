@@ -21,7 +21,7 @@ Pixels требуется разрешение **WRITE_SECURE_SETTINGS** для 
 
 ----------------------
 
-Процедуры ADB с использованием ПК:
+Предоставление разрешений с помощью ПК:
 ----------------------
 
 <details>
@@ -84,17 +84,9 @@ Pixels требуется разрешение **WRITE_SECURE_SETTINGS** для 
 
   ![opening_cmd](../../docs/en/res/opening_cmd.png)
 
-#### Для MacOS: Откройте терминал
+#### Для macOS:
 
-* Найдите `Terminal` в Launchpad и запустите его.
-
-* Выполните `sudo -s` и введите пароль пользователя. **Терминал не будет отображать, сколько
-  символов вы
-  вводите, он останется пустым.**
-
-* Выполните `export PATH=.:$PATH`
-
-**Без этого вы получите ошибки `adb: command not found`.**
+* Дважды щелкните загруженный zip-архив, чтобы открыть его, щелкните правой кнопкой мыши папку `platform-tools`, чтобы открыть контекстное меню, а затем выберите _Службы_ > _Новый терминал в папке_.
 
 </details>
 
@@ -118,8 +110,6 @@ Pixels требуется разрешение **WRITE_SECURE_SETTINGS** для 
 > ```adb devices```
 
 ![6](../../docs/en/res/adb_devices.png)
-
-#### Для macOS:  ```./adb devices ```
 
 * Если ваше устройство не может подключиться к компьютеру, попробуйте подключить его к другому
   USB-порту и/или
@@ -147,10 +137,6 @@ Pixels требуется разрешение **WRITE_SECURE_SETTINGS** для 
 ```adb -s [идентификатор устройства, показанный на шаге 6] shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS```
 
 ![6](../../docs/en/res/write_secure_settings.png)
-
-#### Для macOS:
-
-```./adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS ```
 
 #### Примечание для MIUI, OnePlus и некоторых других устройств
 
@@ -190,16 +176,17 @@ Pixels требуется разрешение **WRITE_SECURE_SETTINGS** для 
 </details>
 
 ----------------------
-Процедуры ADB без использования ПК:
+Предоставление разрешений без использования ПК (с помощью Shizuku):
 ----------------------
 <details>
 
-### Вариант 1: Вы можете установить [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)
+### Вариант 1: Вы можете установить [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)*
 
 и активировать его, следуя предоставленному руководству. Затем вернитесь в приложение _Pixels_,
 чтобы предоставить ему разрешение
 , применив разрешение.
 
+*Если версия из Play Store не работает на вашем устройстве, вы можете использовать этот [форк Shizuku](https://github.com/thedjchi/Shizuku/releases) вместо этого.
 
 </details>
 

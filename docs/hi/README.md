@@ -21,7 +21,7 @@
 
 ----------------------
 
-पीसी का उपयोग कर एडीबी प्रक्रियाएं:
+पीसी का उपयोग करके अनुमति देना:
 ----------------------
 
 <details>
@@ -83,17 +83,9 @@
 
   ![ओपनिंग_सीएमडी](res/opening_cmd.png)
 
-#### MacOS के लिए: टर्मिनल खोलें
+#### macOS के लिए:
 
-* लॉन्चपैड से `टर्मिनल` खोजें और इसे चलाएं।
-
-* `sudo -s` चलाएं और अपना उपयोगकर्ता पासवर्ड टाइप करें। **टर्मिनल यह प्रदर्शित नहीं करेगा कि आप
-  कितने वर्ण
-  टाइप करते हैं, यह खाली रहेगा।**
-
-* `export PATH=.:$PATH` चलाएं
-
-**इसके बिना, आपको `adb: command not found` त्रुटियां मिलेंगी।**
+* डाउनलोड किए गए ज़िप को खोलने के लिए उस पर डबल-क्लिक करें, संदर्भ मेनू खोलने के लिए `platform-tools` फ़ोल्डर पर राइट-क्लिक करें और फिर _Services_ > _New Terminal at Folder_ पर क्लिक करें।
 
 </details>
 
@@ -116,8 +108,6 @@
 > ```adb devices```
 
 ![6](res/adb_devices.png)
-
-#### macOS के लिए: ```./adb devices ```
 
 * यदि आपका डिवाइस आपके कंप्यूटर से कनेक्ट होने में विफल रहता है, तो इसे किसी भिन्न यूएसबी पोर्ट से
   कनेक्ट करने का प्रयास करें और/या
@@ -146,10 +136,6 @@
 ```adb -s [चरण 6 में दिखाई गई डिवाइस आईडी] shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS```
 
 ![6](res/write_secure_settings.png)
-
-#### macOS के लिए:
-
-```./adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS ```
 
 #### MIUI, वनप्लस और कुछ अन्य उपकरणों के लिए नोट
 
@@ -187,15 +173,16 @@
 
 ----------------------
 
-पीसी का उपयोग किए बिना ADB प्रक्रियाएँ:
+पीसी का उपयोग किए बिना अनुमति देना (Shizuku का उपयोग करके):
 ----------------------
 <details>
 
-### विकल्प 1: आप [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api) इंस्टॉल कर सकते हैं
+### विकल्प 1: आप [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)* इंस्टॉल कर सकते हैं
 
 और दिए गए निर्देशों का पालन करके इसे सक्रिय कर सकते हैं।  
 इसके बाद, _Pixels_ ऐप पर वापस जाएँ और रेज़ोल्यूशन लागू करके इसे अनुमति दें।
 
+*यदि Play Store संस्करण आपके डिवाइस पर काम नहीं करता है, तो आप इसके बजाय इस [Shizuku fork](https://github.com/thedjchi/Shizuku/releases) का उपयोग कर सकते हैं।
 
 </details>
 

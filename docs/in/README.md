@@ -21,7 +21,7 @@ Pixel memerlukan izin **WRITE_SECURE_SETTINGS** untuk berfungsi (ini BUKAN rooti
 
 ----------------------
 
-Prosedur ADB menggunakan PC:
+Memberikan Izin menggunakan PC:
 ----------------------
 
 <details>
@@ -82,17 +82,9 @@ Prosedur ADB menggunakan PC:
 
   ![opening_cmd](res/opening_cmd.png)
 
-#### Untuk MacOS: Buka Terminal
+#### Untuk MacOS:
 
-* Cari `Terminal` dari Launchpad dan jalankan.
-
-* Jalankan `sudo -s` dan ketik kata sandi pengguna Anda. **Terminal tidak akan menampilkan berapa
-  banyak karakter yang Anda
-  ketik, itu akan tetap kosong.**
-
-* Jalankan `export PATH=.:$PATH`
-
-**Tanpa ini, Anda akan mendapatkan kesalahan `adb: command not found`.**
+* Klik dua kali zip yang diunduh untuk membukanya, klik kanan folder `platform-tools` untuk membuka menu konteks lalu klik _Layanan_ > _Terminal Baru di Folder_.
 
 </details>
 
@@ -113,8 +105,6 @@ Prosedur ADB menggunakan PC:
 > ```adb devices```
 
 ![6](res/adb_devices.png)
-
-#### Untuk macOS: ```./adb devices ```
 
 * Jika perangkat Anda gagal terhubung ke komputer Anda, coba sambungkan ke port USB yang berbeda
   dan/atau
@@ -142,10 +132,6 @@ Prosedur ADB menggunakan PC:
 ```adb -s [ID perangkat yang ditampilkan di langkah 6] shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS```
 
 ![6](res/write_secure_settings.png)
-
-#### Untuk macOS:
-
-```./adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS ```
 
 #### Catatan untuk MIUI, OnePlus dan beberapa perangkat lainnya
 
@@ -182,15 +168,16 @@ langkah-langkah berikut:
 
 ----------------------
 
-Prosedur ADB Tanpa Menggunakan PC:
+Memberikan Izin tanpa menggunakan PC (menggunakan Shizuku):
 ----------------------
 <details>
 
-### Opsi 1: Kamu dapat menginstal [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)
+### Opsi 1: Kamu dapat menginstal [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)*
 
 dan mengaktifkannya dengan mengikuti panduan yang disediakan.  
 Setelah itu, kembali ke aplikasi _Pixels_ untuk memberikan izin dengan menerapkan resolusi.
 
+*Jika versi Play Store tidak berfungsi di perangkat Anda, Anda dapat menggunakan [fork Shizuku ini](https://github.com/thedjchi/Shizuku/releases) sebagai gantinya.
 
 </details>
 

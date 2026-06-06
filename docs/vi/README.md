@@ -21,7 +21,7 @@ Pixels cần quyền **WRITE_SECURE_SETTINGS** để hoạt động (đây KHÔN
 
 ----------------------
 
-Quy trình ADB sử dụng PC:
+Cấp quyền bằng máy tính:
 ----------------------
 
 <details>
@@ -81,16 +81,9 @@ Quy trình ADB sử dụng PC:
 
 ![opening_cmd](../en/res/opening_cmd.png)
 
-#### Đối với MacOS: Mở Terminal
+#### Đối với macOS:
 
-* Tìm kiếm `Terminal` từ Launchpad và chạy nó.
-
-* Chạy `sudo -s` và nhập mật khẩu người dùng của bạn. **Thiết bị đầu cuối sẽ không hiển thị bạn nhập
-  bao nhiêu ký tự, nó sẽ trống.**
-
-* Chạy `export PATH=.:$PATH`
-
-**Nếu không có điều này, bạn sẽ gặp lỗi `adb: command not found`.**
+* Nhấp đúp vào tệp zip đã tải xuống để mở, nhấp chuột phải vào thư mục `platform-tools` để mở menu ngữ cảnh và sau đó nhấp vào _Dịch vụ_ > _Terminal mới tại thư mục_.
 
 </details>
 
@@ -111,8 +104,6 @@ Quy trình ADB sử dụng PC:
 > ```adb devices```
 
 ![6](../en/res/adb_devices.png)
-
-#### Đối với macOS:  ```./adb devices ```
 
 * Nếu thiết bị của bạn không kết nối được với máy tính, hãy thử kết nối thiết bị với một cổng USB
   khác và/hoặc sử dụng một cáp dữ liệu USB khác. Nếu vẫn không kết nối được, có thể máy tính của bạn
@@ -137,10 +128,6 @@ Quy trình ADB sử dụng PC:
 ```adb -s [device Id shown in step 6] shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS```
 
 ![6](../en/res/write_secure_settings.png)
-
-#### Đối với macOS:
-
-```./adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS ```
 
 #### Lưu ý đối với MIUI, OnePlus và một số thiết bị khác
 
@@ -173,14 +160,16 @@ Nếu bạn gặp lỗi `java.lang.SecurityException: grantRuntimePermission`, h
 </details>
 
 ----------------------
-Quy trình ADB không cần sử dụng PC:
+Cấp quyền không cần máy tính (sử dụng Shizuku):
 ----------------------
 <details>
 
-### Tùy chọn 1: Bạn có thể cài đặt [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)
+### Tùy chọn 1: Bạn có thể cài đặt [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)*
 
 và kích hoạt nó theo hướng dẫn được cung cấp. Sau đó, quay lại ứng dụng _Pixels_ để cấp quyền cho nó
 bằng cách áp dụng độ phân giải.
+
+*Nếu phiên bản Play Store không hoạt động trên thiết bị của bạn, bạn có thể sử dụng [bản fork Shizuku này](https://github.com/thedjchi/Shizuku/releases) thay thế.
 
 </details>
 

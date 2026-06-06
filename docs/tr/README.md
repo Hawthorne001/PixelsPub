@@ -22,7 +22,7 @@ Pixels'in çalışması için **WRITE_SECURE_SETTINGS** izni gerekir (bu, root i
 
 ----------------------
 
-PC kullanarak ADB Prosedürleri:
+Bilgisayar kullanarak izin verme:
 ----------------------
 
 <details>
@@ -82,16 +82,9 @@ PC kullanarak ADB Prosedürleri:
 
 ![opening_cmd](../en/res/opening_cmd.png)
 
-#### MacOS için: Terminal'i açın
+#### MacOS için:
 
-* Launchpad'den `Terminal`'i arayın ve çalıştırın.
-
-* `sudo -s` komutunu çalıştırın ve kullanıcı şifrenizi yazın. **Terminal, yazdığınız karakter
-  sayısını göstermez, boş kalır.**
-
-* `export PATH=.:$PATH` komutunu çalıştırın
-
-**Bu olmadan `adb: command not found` hataları alırsınız.**
+* İndirilen zip dosyasına çift tıklayarak açın, bağlam menüsünü açmak için `platform-tools` klasörüne sağ tıklayın ve ardından _Servisler_ > _Klasörde Yeni Terminal_ seçeneğine tıklayın.
 
 </details>
 
@@ -112,8 +105,6 @@ PC kullanarak ADB Prosedürleri:
 > ```adb devices```
 
 ![6](../en/res/adb_devices.png)
-
-#### macOS için:  ```./adb devices ```
 
 * Cihazınız bilgisayarınıza bağlanamazsa, farklı bir USB bağlantı noktasına bağlamayı ve/veya farklı
   bir USB veri kablosu kullanmayı deneyin. Hala bağlanmıyorsa, bilgisayarınızda telefonunuz için USB
@@ -138,10 +129,6 @@ PC kullanarak ADB Prosedürleri:
 ```adb -s [6. adımda gösterilen cihaz kimliği] shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS```
 
 ![6](../en/res/write_secure_settings.png)
-
-#### macOS için:
-
-```./adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS ```
 
 #### MIUI, OnePlus ve diğer bazı cihazlar için not
 
@@ -176,15 +163,16 @@ PC kullanarak ADB Prosedürleri:
 </details>
 
 ----------------------
-PC kullanmadan ADB Prosedürleri:
+Bilgisayar kullanmadan izin verme (Shizuku kullanarak):
 ----------------------
 <details>
 
-### Seçenek 1: [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)'yu yükleyebilir
+### Seçenek 1: [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)*'yu yükleyebilir
 
 ve sağladığı kılavuzu izleyerek etkinleştirebilirsiniz. Ardından, bir çözünürlük uygulayarak izin
 vermek için _Pixels_ uygulamasına geri dönün.
 
+*Play Store sürümü cihazınızda çalışmazsa, bunun yerine bu [Shizuku çatalını](https://github.com/thedjchi/Shizuku/releases) kullanabilirsiniz.
 
 </details>
 

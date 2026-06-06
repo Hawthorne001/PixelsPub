@@ -21,7 +21,7 @@ Pixels needs **WRITE_SECURE_SETTINGS** permission in order to work (this is NOT 
 
 ----------------------
 
-ADB Procedures using a PC:
+Granting Permission using a PC:
 ----------------------
 
 <details>
@@ -84,14 +84,9 @@ ADB Procedures using a PC:
 
 #### For MacOS: Open up Terminal
 
-* Search `Terminal` from Launchpad and run it.
-
-* Run `sudo -s` and type your user password. **The terminal won't display how much characters you
-  type, it'll remain blank.**
-
-* Run `export PATH=.:$PATH`
-
-**Without this, you will get `adb: command not found` errors.**
+* Double-click the downloaded zip to open it, right-click the `platform-tools` folder to open the
+  context menu and then click
+  _Services_ > _New Terminal at Folder_.
 
 </details>
 
@@ -112,8 +107,6 @@ ADB Procedures using a PC:
 > ```adb devices```
 
 ![6](docs/en/res/adb_devices.png)
-
-#### For macOS:  ```./adb devices ```
 
 * If your device fails to connect to your computer, try connecting it to a different USB port and/or
   using a different USB data cable. If still not connecting, your computer is possibly missing the
@@ -138,10 +131,6 @@ ADB Procedures using a PC:
 ```adb -s [device Id shown in step 6] shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS```
 
 ![6](docs/en/res/write_secure_settings.png)
-
-#### For macOS:
-
-```./adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS ```
 
 #### Note for MIUI, OnePlus and some other devices
 
@@ -174,14 +163,17 @@ If you get `java.lang.SecurityException: grantRuntimePermission` Error, follow t
 </details>
 
 ----------------------
-ADB Procedures without using a PC:
+Granting Permission without using a PC (using Shizuku):
 ----------------------
 <details>
 
-### Option 1: You can install [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)
+### Option 1: You can install [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)*
 
 and activate it following the guide it provided. Then go back to _Pixels_ app to grant it permission
 by applying a resolution.
+
+*If the Play Store version doesn't work on your device, you may use
+this [Shizuku fork](https://github.com/thedjchi/Shizuku/releases) instead.
 
 </details>
 
